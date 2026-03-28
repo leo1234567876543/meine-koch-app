@@ -14,7 +14,7 @@ def hole_zufall(dateiname):
     return "Datei nicht gefunden!"
 
 # --- Streamlit Oberfläche (Das "Frontend") ---
-st.title("🍴 Mamas Küchen-Planer")
+st.title("🍴 Ricardas Essengenerator")
 st.write("Wähle eine Kategorie aus, um einen Vorschlag zu erhalten:")
 
 # Deine 3 Kategorien als schicke Buttons
