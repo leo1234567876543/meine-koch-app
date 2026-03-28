@@ -20,15 +20,15 @@ st.write("Wähle eine Kategorie aus, um einen Vorschlag zu erhalten:")
 # Deine 3 Kategorien als schicke Buttons
 if st.button("🍰 1. Kuchen"):
     ergebnis = hole_zufall("kuchen.txt")
-    st.success(f"Der Zufallskuchen ist ein **{ergebnis}**!")
+    st.success(f"Der Zufallskuchen ist ein **{ergebnis}**")
 
 if st.button("🍝 2. Essen unter der Woche"):
     ergebnis = hole_zufall("essen_unter.txt")
-    st.info(f"Das Zufallswochentagsessen ist **{ergebnis}**!")
+    st.info(f"Das Zufallswochentagsessen ist **{ergebnis}**")
 
 if st.button("🍗 3. Essen am Wochenende"):
     ergebnis = hole_zufall("essen_wochenende.txt")
-    st.warning(f"Das Zufallswochenendsessen ist **{ergebnis}**!")
+    st.warning(f"Das Zufallswochenendsessen ist **{ergebnis}**")
 
 # Kleiner Info-Text für den Lehrer
 st.sidebar.write("HTL Projekt v1.0")
