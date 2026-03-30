@@ -10,8 +10,8 @@ def hole_zufall(dateiname):
             woerter = text.strip().split(",")
             # Entfernt Leerzeichen am Anfang/Ende jedes Wortes
             woerter = [w.strip() for w in woerter if w.strip()]
-            zuf=random.randint(0,50)
-            print(f"{zuf(woerter)}")
+            zuf = random.choice
+            return zuf(woerter)
     return "Datei nicht gefunden!"
 
 # --- Streamlit Oberfläche (Das "Frontend") ---
