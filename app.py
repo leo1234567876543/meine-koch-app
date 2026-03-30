@@ -18,8 +18,7 @@ def hole_zufall(dateiname):
 
             
             
-            return zuf(woerter)
-    return "Datei nicht gefunden!"
+
 
 # --- Streamlit Oberfläche (Das "Frontend") ---
 st.title("🍴 Ricardas Zufallsessen")
