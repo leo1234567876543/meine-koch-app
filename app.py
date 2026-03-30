@@ -11,7 +11,19 @@ def hole_zufall(dateiname):
             # Entfernt Leerzeichen am Anfang/Ende jedes Wortes
             woerter = [w.strip() for w in woerter if w.strip()]
             zuf = random.choice
-            print(zuf)
+            
+            return zuf(woerter)
+    return "Datei nicht gefunden!"
+
+def hole_zufall1(dateiname):
+    if os.path.exists(dateiname):
+        with open(dateiname, "r", encoding="utf-8") as f:
+            text = f.read()
+            woerter = text.strip().split(",")
+            # Entfernt Leerzeichen am Anfang/Ende jedes Wortes
+            woerter = [w.strip() for w in woerter if w.strip()]
+            
+            
             return zuf(woerter)
     return "Datei nicht gefunden!"
 
@@ -24,7 +36,7 @@ if st.button("🍰 1. Kuchen"):
     ergebnis = hole_zufall("kuchen.txt")
     st.success(f"Der Zufallskuchen ist ein **{ergebnis}**")
 if st.button("Rezept"):
-    ergebnis1=hole_zufall("kuchen_rezepte.txt")
+    ergebnis1=hole_zufall1("kuchen_rezepte.txt")
     st.success(f"Hier ist das Rezept:**{ergebnis1}**")
 
 if st.button("🍝 2. Essen unter der Woche"):
