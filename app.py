@@ -23,7 +23,7 @@ if st.button("🍰 1. Kuchen"):
     st.success(f"Der Zufallskuchen ist ein **{ergebnis}**")
     if st.button("Rezept"):
         ergebnis1=hole_zufall("kuchen_rezepte.txt")
-        st.success(f"**{ergebnis1}**")
+        st.success(f"Hier ist das Rezept:**{ergebnis1}**")
 
 if st.button("🍝 2. Essen unter der Woche"):
     ergebnis = hole_zufall("essen_unter.txt")
