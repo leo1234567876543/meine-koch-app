@@ -11,6 +11,7 @@ def hole_zufall(dateiname):
             # Entfernt Leerzeichen am Anfang/Ende jedes Wortes
             woerter = [w.strip() for w in woerter if w.strip()]
             zuf = random.choice
+            print(zuf)
             return zuf(woerter)
     return "Datei nicht gefunden!"
 
