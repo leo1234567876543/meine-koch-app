@@ -3,7 +3,7 @@ import random
 import os
 
 # Deine HTL-Funktionen (fast wie im Original)
-def hole_zufall(dateiname):
+def hole_zufall(dateiname, zuf):
     if os.path.exists(dateiname):
         with open(dateiname, "r", encoding="utf-8") as f:
             text = f.read()
@@ -15,7 +15,7 @@ def hole_zufall(dateiname):
             return zuf(woerter)
     return "Datei nicht gefunden!"
 
-def hole_zufall1(dateiname):
+def hole_zufall1(dateiname, zuf):
     if os.path.exists(dateiname):
         with open(dateiname, "r", encoding="utf-8") as f:
             text = f.read()
