@@ -21,8 +21,8 @@ st.write("Wähle eine Kategorie aus, um einen Vorschlag zu erhalten:")
 if st.button("🍰 1. Kuchen"):
     ergebnis = hole_zufall("kuchen.txt")
     st.success(f"Der Zufallskuchen ist ein **{ergebnis}**")
-        if st.button("Rezept"):
-            st.infor(f"abc")
+    if st.button("Rezept"):
+        st.infor(f"abc")
 
 if st.button("🍝 2. Essen unter der Woche"):
     ergebnis = hole_zufall("essen_unter.txt")
