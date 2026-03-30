@@ -10,7 +10,8 @@ def hole_zufall(dateiname):
             woerter = text.strip().split(",")
             # Entfernt Leerzeichen am Anfang/Ende jedes Wortes
             woerter = [w.strip() for w in woerter if w.strip()]
-            return random.choice(woerter)
+            zuf=random.randint(0,50)
+            return zuf(woerter)
     return "Datei nicht gefunden!"
 
 # --- Streamlit Oberfläche (Das "Frontend") ---
@@ -21,9 +22,9 @@ st.write("Wähle eine Kategorie aus, um einen Vorschlag zu erhalten:")
 if st.button("🍰 1. Kuchen"):
     ergebnis = hole_zufall("kuchen.txt")
     st.success(f"Der Zufallskuchen ist ein **{ergebnis}**")
-    if st.button("Rezept"):
-        ergebnis1=hole_zufall("kuchen_rezepte.txt")
-        st.success(f"Hier ist das Rezept:**{ergebnis1}**")
+if st.button("Rezept"):
+    ergebnis1=hole_zufall("kuchen_rezepte.txt")
+    st.success(f"Hier ist das Rezept:**{ergebnis1}**")
 
 if st.button("🍝 2. Essen unter der Woche"):
     ergebnis = hole_zufall("essen_unter.txt")
