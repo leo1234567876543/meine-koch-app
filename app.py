@@ -22,7 +22,7 @@ def hole_zufall(dateiname):
 
 # --- Streamlit Oberfläche (Das "Frontend") ---
 st.title("🍴 Ricardas Zufallsessen")
-st.write("Alles gute zum Muttertag")
+st.write("❤️ Alles gute zum Muttertag ❤️")
 st.write("Wähle eine Kategorie aus, um einen Vorschlag zu erhalten:")
 
 # Deine 3 Kategorien als schicke Buttons
