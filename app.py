@@ -44,7 +44,7 @@ if st.button("🥧 Mehlspeisen"):
     st.info(f"Die Zufallsmehlspeise ist **{ergebnis}**")
 
 if st.button("🍰 Kuchen"):
-    ergebnis = hole_zufall("kuchen.txt")
+    ergebnis = hole_zufall("kuchen1.txt")
     st.info(f"Der Zufallskuchen ist **{ergebnis}**")
 
 # Kleiner Info-Text für den Lehrer
