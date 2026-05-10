@@ -32,13 +32,11 @@ if st.button("Rezept für den Kuchen"):
     ergebnis1=hole_zufall("kuchen_rezepte.txt")
     st.success(f"Hier ist das Rezept:**{ergebnis1}**")
 
-if st.button("🍝 2. Essen unter der Woche"):
+if st.button("🍝 2. Essen"):
     ergebnis = hole_zufall("essen_unter.txt")
-    st.info(f"Das Zufallswochentagsessen ist **{ergebnis}**")
+    st.info(f"Das Zufallsessen ist **{ergebnis}**")
 
-if st.button("🍗 3. Essen am Wochenende"):
-    ergebnis = hole_zufall("essen_wochenende.txt")
-    st.warning(f"Das Zufallswochenendsessen ist **{ergebnis}**")
+
 
 # Kleiner Info-Text für den Lehrer
 st.sidebar.write("HTL Projekt v1.0")
