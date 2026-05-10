@@ -33,7 +33,7 @@ if st.button("Rezept für den Kuchen"):
     ergebnis1=hole_zufall("kuchen_rezepte.txt")
     st.success(f"Hier ist das Rezept:**{ergebnis1}**")
 
-st.write("Erweiterung von 50 auf 200 Essen")
+st.write("Erweiterung von 50 auf 200 Essen und Mehlspeisen")
 
 if st.button("🍝 2. Essen"):
     ergebnis = hole_zufall("essen_unter.txt")
@@ -43,9 +43,7 @@ if st.button("🥧 Mehlspeisen"):
     ergebnis = hole_zufall("mehl.txt")
     st.info(f"Die Zufallsmehlspeise ist **{ergebnis}**")
 
-if st.button("🍰 Kuchen"):
-    ergebnis = hole_zufall("kuchen1.txt")
-    st.info(f"Der Zufallskuchen ist **{ergebnis}**")
+
 
 # Kleiner Info-Text für den Lehrer
 st.sidebar.write("HTL Projekt v1.0")
