@@ -22,6 +22,7 @@ def hole_zufall(dateiname):
 
 # --- Streamlit Oberfläche (Das "Frontend") ---
 st.title("🍴 Ricardas Zufallsessen")
+st.write("Alles gute zum Muttertag")
 st.write("Wähle eine Kategorie aus, um einen Vorschlag zu erhalten:")
 
 # Deine 3 Kategorien als schicke Buttons
@@ -31,6 +32,8 @@ if st.button("🍰 1. Kuchen"):
 if st.button("Rezept für den Kuchen"):
     ergebnis1=hole_zufall("kuchen_rezepte.txt")
     st.success(f"Hier ist das Rezept:**{ergebnis1}**")
+
+st.write("Erweiterung von 50 auf 200 Essen")
 
 if st.button("🍝 2. Essen"):
     ergebnis = hole_zufall("essen_unter.txt")
